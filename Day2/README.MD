@@ -7,3 +7,5 @@
   - cd day2
 5. Execute the jenkins installer script
   - bash install-jenkins.sh
+6. Ensure that jenkins is actually working using the following command
+  - service jenkins status
