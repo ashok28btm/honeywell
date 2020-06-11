@@ -1,0 +1,24 @@
+AWS
+
+Bastion setup
+- Create a new server while downloading the SSH key
+-- Convert the .pem file to .ppk (for windows) using puttygen if you have to
+
+
+Install and configure aws cli
+-- Log into the server
+-- sudo su - (switch to root user)
+-- apt-get update
+-- apt-get install -y python-pip
+-- pip install awscli
+-- aws --version (make sure aws cli is installed)
+-- [In Web UI] Goto services > IAM > Users > Add user
+-- Add a username of choice > Check "programatic access"
+-- For permissions  Attach Existing Policy Directly > Check 'Administrator Access' > Next > Next
+-- Note down your Access and secret key
+-- aws configure [In server] 
+-- enter the access key, secret key, "us-east-1" in region without quotes, blank for output format
+
+Install kubectl
+
+Install eksctl
